@@ -167,30 +167,30 @@ msgstr ""
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
 msgid "toc.html"
-msgstr ""
+msgstr "toc.html"
 
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Table of Contents"
-msgstr ""
+msgstr "Turinys"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
 msgid "index.html"
-msgstr ""
+msgstr "index.html"
 
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Home"
-msgstr ""
+msgstr "Pradžia"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
 msgid "changelog.html"
-msgstr ""
+msgstr "changelog.html"
 
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Changelog"
-msgstr ""
+msgstr "Pakeitimų žurnalas"
 
