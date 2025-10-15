@@ -2,27 +2,27 @@
 # A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.
 #: ImplementationGuide.name
 msgid "LTBase"
-msgstr ""
+msgstr "LTBase"
 
 # A short, descriptive, user-friendly title for the implementation guide.
 #: ImplementationGuide.title
 msgid "Lithuanian Base Implementation Guide"
-msgstr ""
+msgstr "Lietuvių bazės įgyvendinimo vadovas"
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the implementation guide.
 #: ImplementationGuide.publisher
 msgid "Lithuanian Medical Library"
-msgstr ""
+msgstr "Lietuvos medicinos biblioteka"
 
 # The name of an individual to contact.
 #: ContactDetail.name
 msgid "Lithuanian Medical Library"
-msgstr ""
+msgstr "Lietuvos medicinos biblioteka"
 
 # A free text natural language description of the implementation guide from a consumer's perspective.
 #: ImplementationGuide.description
 msgid "Lithuanian Base Implementation Guide"
-msgstr ""
+msgstr "Lietuvių bazės įgyvendinimo vadovas"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
