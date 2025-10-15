@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="lt" id="Organization-example-lmb" original="Resource Organization-example-lmb" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Organization-example-lmb" resname="Organization.name">
+             <notes>
+               <note id="n1">A name associated with the organization.</note>
+             </notes>
+        <source>Lietuvos Medicinos biblioteka</source>
+        <target>Lithuanian Medical Library</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

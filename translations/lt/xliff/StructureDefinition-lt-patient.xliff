@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="lt" id="StructureDefinition-lt-patient" original="Resource StructureDefinition-lt-patient" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-lt-patient" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>LTBasePatient</source>
+        <target>LTBasePatient</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-lt-patient" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>LT Base Patient</source>
+        <target>LT Base Patient</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-lt-patient" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>Lithuanian Medical Library</source>
+        <target>Lithuanian Medical Library</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-lt-patient" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Lithuanian Medical Library</source>
+        <target>Lithuanian Medical Library</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

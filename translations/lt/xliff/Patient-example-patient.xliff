@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="lt" id="Patient-example-patient" original="Resource Patient-example-patient" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Patient-example-patient" resname="HumanName.text">
+             <notes>
+               <note id="n1">Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.</note>
+             </notes>
+        <source>Jonas Petrauskas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="HumanName.family">
+             <notes>
+               <note id="n1">The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.</note>
+             </notes>
+        <source>Petrauskas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="HumanName.given">
+             <notes>
+               <note id="n1">Given name.</note>
+             </notes>
+        <source>Jonas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="Address.line">
+             <notes>
+               <note id="n1">This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</note>
+             </notes>
+        <source>Gedimino pr. 10</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="Address.city">
+             <notes>
+               <note id="n1">The name of the city, town, suburb, village or other community or delivery center.</note>
+             </notes>
+        <source>Vilnius</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="Address.postalCode">
+             <notes>
+               <note id="n1">A postal code designating a region defined by the postal service.</note>
+             </notes>
+        <source>LT-01103</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-example-patient" resname="Address.country">
+             <notes>
+               <note id="n1">Country - a nation as commonly understood or generally accepted.</note>
+             </notes>
+        <source>LT</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,281 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="lt" id="ImplementationGuide-lt.hl7.fhir.base" original="Resource ImplementationGuide-lt.hl7.fhir.base" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.name">
+             <notes>
+               <note id="n1">A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>LTBase</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Implementation Guide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Medical Library</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Lithuanian Medical Library</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.description">
+             <notes>
+               <note id="n1">A free text natural language description of the implementation guide from a consumer's perspective.</note>
+             </notes>
+        <source>Lithuanian Base Implementation Guide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>Dr. Petras Kazlauskas - LT Base Practitioner Example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>An example Practitioner conforming to the Lithuanian Base Profile.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>Example Encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Example of an psychiatric encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>Example LT Base Condition - Cancer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Example instance of a cancer diagnosis documented during a patient encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>Example LT Base Observation - Blood Pressure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Example instance of a blood pressure measurement for a patient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>example-lmb</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Example of a LMB organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>Jonas Petrauskas - LT Base Patient Example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>An example Patient conforming to the Lithuanian Base Profile.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Condition</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Condition profile, used for documenting general, symptoms, conditions, and their characteristics.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Encounter profile, used to represent clinical encounters</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Observation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Observation profile, used to represent vitals, demographic, clinical and laboratory observations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Organization profile, used to define healthcare organizations and sub-units</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Patient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Patient profile, used to represent patients administrative information</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Practitioner</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Practitioner profile, used to define healthcare practitioners</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Practitioner Role</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Practitioner Role profile, used to define roles of the healthcare practitioner in the healthcare facilities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</note>
+             </notes>
+        <source>LT Base Related Person</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
+             </notes>
+        <source>Lithuanian Base Related Person profile, used to define persons related to a patient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.source[x]">
+             <notes>
+               <note id="n1">Indicates the URL or the actual content to provide for the page.</note>
+             </notes>
+        <source>toc.html</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.</note>
+             </notes>
+        <source>Table of Contents</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.source[x]">
+             <notes>
+               <note id="n1">Indicates the URL or the actual content to provide for the page.</note>
+             </notes>
+        <source>index.html</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.</note>
+             </notes>
+        <source>Home</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.source[x]">
+             <notes>
+               <note id="n1">Indicates the URL or the actual content to provide for the page.</note>
+             </notes>
+        <source>changelog.html</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-lt.hl7.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.</note>
+             </notes>
+        <source>Changelog</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

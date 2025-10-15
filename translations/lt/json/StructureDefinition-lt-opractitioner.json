@@ -1,0 +1,35 @@
+{
+  "id" : "StructureDefinition-lt-opractitioner",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "lt",
+      "entries" : [
+        {
+          "id" : "StructureDefinition.name",
+          "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "LTBasePractitioner",
+          "target" : "LTBasePractitioner"
+        },
+        {
+          "id" : "StructureDefinition.title",
+          "context" : "A short, descriptive, user-friendly title for the structure definition.",
+          "source" : "LT Base Practitioner",
+          "target" : "LT Base Practitioner"
+        },
+        {
+          "id" : "StructureDefinition.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+          "source" : "Lithuanian Medical Library",
+          "target" : "Lithuanian Medical Library"
+        },
+        {
+          "id" : "StructureDefinition.contact.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Lithuanian Medical Library",
+          "target" : "Lithuanian Medical Library"
+        }
+      ]
+    }
+  ]
+}
