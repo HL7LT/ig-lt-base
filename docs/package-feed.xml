@@ -7,18 +7,18 @@
   <channel>
     <title>HL7 LT Implementation Guide Packages</title>
     <description>FHIR Packages published for HL7 LT</description>
-    <link>https://HL7LT/registry/package-feed.xml</link>
+    <link>https://hl7lt.github.io/registry/package-feed.xml</link>
     <generator>Manual</generator>
     <lastBuildDate>Wed, 27 Aug 2025 12:00:00 GMT</lastBuildDate>
-    <atom:link href="https://HL7LT/registry/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://hl7lt.github.io/registry/package-feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Wed, 27 Aug 2025 12:00:00 GMT</pubDate>
     <language>en</language>
     
      <item>
-       <title>lt.hl7.base#0.1.0</title>
-       <description>HL7 LT Implementation Guide Package version 0.1.0</description>
-       <link>https://github.com/HL7LT/releases/download/0.1.0/package.tgz</link>
-       <guid isPermaLink="true">https://github.com/HL7LT/releases/download/0.1.0/package.tgz</guid>
+       <title>lt.hl7.fhir.base#0.1.0</title>
+       <description>HL7 LT Base Implementation Guide Package version 0.1.0</description>
+       <link>https://hl7lt.github.io/registry/base/0.1.0/package.tgz</link>
+       <guid isPermaLink="true">https://hl7lt.github.io/registry/base/0.1.0/package.tgz</guid>
        <dc:creator>igorboss</dc:creator>
        <fhir:version>5.0.0</fhir:version>
        <fhir:kind>IG</fhir:kind>
