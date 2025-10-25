@@ -1,5 +1,8 @@
 Alias: $loinc = http://loinc.org
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+Alias: $sct = http://snomed.info/sct
+Alias: $sct-vs = http://snomed.info/sct?fhir_vs
+
 
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
@@ -32,6 +35,7 @@ Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinit
 Alias: $iso-3166 = urn:iso:std:iso:3166
 Alias: $issue-severity = http://hl7.org/fhir/issue-severity
 Alias: $location-status = http://hl7.org/fhir/location-status
+Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 Alias: $name-use = http://hl7.org/fhir/name-use
 Alias: $object-role = http://terminology.hl7.org/CodeSystem/object-role
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category //http://hl7.org/fhir/observation-category
@@ -50,8 +54,6 @@ Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/prov
 Alias: $qualification-codes = http://terminology.hl7.org/CodeSystem/v2-0360
 Alias: $reference-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 Alias: $sample-security-structural-codes = http://hl7.org/fhir/sample-security-structural-roles
-Alias: $sct = http://snomed.info/sct
-Alias: $sct-vs = http://snomed.info/sct?fhir_vs
 Alias: $security-source-type = http://terminology.hl7.org/CodeSystem/security-source-type
 Alias: $telecom-use = http://hl7.org/fhir/contact-point-use
 Alias: $translation-extension = http://hl7.org/fhir/StructureDefinition/translation
