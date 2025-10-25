@@ -56,7 +56,7 @@ Description: "Lithuanian Base Observation profile, used to represent vitals, dem
 * component.code MS
 // * component.code from $observation-codes
 * component.value[x] MS
-// * component.dataAbsentReason from DataAbsentReasonVS (extensible)
+* dataAbsentReason MS
 // * component.interpretation from ObservationInterpretationVS (extensible)
 
 Instance: example-LTBaseobservation-blood-pressure

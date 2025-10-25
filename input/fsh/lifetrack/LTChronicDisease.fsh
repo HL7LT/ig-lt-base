@@ -53,7 +53,7 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * code from LTCVDHighRiskConditions (required)
 * clinicalStatus =  $condition-clinical#active
 

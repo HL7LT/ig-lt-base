@@ -18,6 +18,11 @@ ValueSet: LTBaseOrganizationIdentifier
 Id: organization-identifier
 Title: "Organization Identifier"
 Description: "A curated list of identifier systems for organizations."
+* ^language = #en
+* ^version = "1.0.0"
+* ^experimental = false
+* ^publisher = "HL7 Lithuania" 
+
 * LTBaseIdentifierDomain#http://esveikata.lt/Identifier/SVEIDRAID 
 * LTBaseIdentifierDomain#http://esveikata.lt/classifiers/Identifier/JAR
 * LTBaseIdentifierDomain#http://esveikata.lt/Identifier/ESPBI 

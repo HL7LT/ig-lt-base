@@ -16,6 +16,8 @@ RuleSet: OriginalCodeSystemDraft(id)
 * ^hierarchyMeaning = #is-a
 * ^language = #lt
 * ^experimental = true
+* ^publisher = "HL7 Lithuania" 
+
 
 RuleSet: OriginalCodeSystem(id)
 * ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
@@ -25,6 +27,8 @@ RuleSet: OriginalCodeSystem(id)
 * ^hierarchyMeaning = #is-a
 * ^language = #lt
 * ^experimental = false
+* ^publisher = "HL7 Lithuania" 
+
 
 RuleSet: SupplementCodeSystemDraft(id, supplements, version)
 * ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
@@ -34,6 +38,8 @@ RuleSet: SupplementCodeSystemDraft(id, supplements, version)
 * ^version = "{version}"
 * ^language = #en
 * ^experimental = true
+* ^publisher = "HL7 Lithuania" 
+
 
 RuleSet: SupplementCodeSystem(id, supplements, version)
 * ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
@@ -43,3 +49,5 @@ RuleSet: SupplementCodeSystem(id, supplements, version)
 * ^version = "{version}"
 * ^language = #en
 * ^experimental = false
+* ^publisher = "HL7 Lithuania" 
+

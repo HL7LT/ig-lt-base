@@ -3,6 +3,8 @@ Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $sct = http://snomed.info/sct
 Alias: $sct-vs = http://snomed.info/sct?fhir_vs
 
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $units-of-time = http://hl7.org/fhir/ValueSet/units-of-time
 
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use

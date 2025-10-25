@@ -67,29 +67,23 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
 * category = $observation-category#social-history "Social History"
-// * code.coding[0] = $loinc#72166-2 "Tobacco smoking status"
-// * code ^mustSupport = true
-// * code.coding[1] = $sct#229819007 "Tobacco use and exposure (observable entity)"
-* code ^mustSupport = true // Constraint on the code CodeableConcept itself
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[0].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains loincCode 1..1 and sctCode 0..1
+* code.coding[loincCode].system = $loinc
 * code.coding[loincCode] = $loinc#72166-2 "Tobacco smoking status"
+* code.coding[sctCode].system = $sct
 * code.coding[sctCode] = $sct#229819007 "Tobacco use and exposure (observable entity)"
-* subject 1.. MS
+* subject 1..
 * subject only Reference(LTBasePatient)
-* subject.reference 1.. MS
-* effective[x] 1.. MS
+* effective[x] 1..
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from LTCurrentSmokingStatus (preferred)
-// * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * component ..0
-* component ^mustSupport = false
 
 
 // Example: current smoker
@@ -101,7 +95,10 @@ Description: "Example instance showing a patient who currently smokes."
 
 * status = #final
 * category = $observation-category#social-history "Social History"
-* code = $loinc#72166-2 "Tobacco smoking status"
+* code.coding[loincCode].system = $loinc
+* code.coding[loincCode].code = #72166-2
+* code.coding[sctCode].system = $sct
+* code.coding[sctCode].code = #229819007 "Tobacco use and exposure (observable entity)"
 * subject = Reference(example-patient)
 * effectiveDateTime = "2025-10-01T09:00:00Z"
 * valueCodeableConcept = $sct#77176002 "Smoker (finding)"
@@ -119,19 +116,17 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * category = $observation-category#social-history "Social History"
 * code = $sct#266918002 "Tobacco smoking consumption (observable entity)"
-* subject 1.. MS
+* subject 1..
 * subject only Reference(LTBasePatient)
-* subject.reference 1.. MS
-* effective[x] 1.. MS
+* effective[x] 1..
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from LTTobaccoSmokingConsumption (preferred)
 * component ..0
-* component ^mustSupport = false
 
 
 // Example: Tobacco Smoking Consumption
@@ -161,23 +156,24 @@ Description: "Amount of time (e.g. years) the patient has used smoking or smokel
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * category = $observation-category#social-history "Social History"
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[0].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains loincCode 1..1 and sctCode 0..1
+* code.coding[loincCode].system = $loinc
 * code.coding[loincCode] = $loinc#88029-4  "Tobacco use duration"
+* code.coding[sctCode].system = $sct
 * code.coding[sctCode] = $sct#228487000 "Total time smoked"
-* subject 1.. MS
+* subject 1..
 * subject only Reference(LTBasePatient)
-* subject.reference 1.. MS
-* effective[x] 1.. MS
+* effective[x] 1..
 * effective[x] only dateTime
 * value[x] only Quantity
-* valueQuantity.unit from http://hl7.org/fhir/ValueSet/units-of-time (required)
+* valueQuantity from $units-of-time (required)
 * component ..0
-* component ^mustSupport = false
+
 
 // Example: Tobacco Use Duration
 Instance: example-tobacco-use-duration
@@ -187,10 +183,11 @@ Title: "Example LT Tobacco Use Duration - 5 years"
 Description: "Example instance showing a patient who has been smoking for 5 years."
 * status = #final
 * category = $observation-category#social-history "Social History"
-* code = $loinc#88029-4  "Tobacco use duration"
+* code.coding[loincCode] = $loinc#88029-4  "Tobacco use duration"
 * subject = Reference(example-patient)
 * effectiveDateTime = "2025-10-01T09:00:00Z"
-* valueQuantity = 5 'a' "year"
+* valueQuantity = $ucum#a "years"
+  * value = 5
 * note.text = "Patient reports smoking approximately for 5 years."
 
 
@@ -204,18 +201,15 @@ Description: "Records how long it has been since the patient stopped smoking, as
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * category = $observation-category#social-history "Social History"
 * code = $sct#228486009 "Time since stopped smoking (observable entity)"
-* subject 1.. MS
-* subject only Reference(LTBasePatient)
-* subject.reference 1.. MS
-* effective[x] 1.. MS
+* subject 1.. 
+* effective[x] 1..
 * effective[x] only dateTime
 * value[x] only Quantity
-* valueQuantity.unit from http://hl7.org/fhir/ValueSet/units-of-time (required)
+* valueQuantity from $units-of-time (required)
 * component ..0
-* component ^mustSupport = false
 
 // Example: Stopped Smoking
 Instance: example-stopped-smoking
@@ -228,9 +222,9 @@ Description: "Example instance showing a patient who has stopped smoking 2 years
 * code = $sct#228486009 "Time since stopped smoking (observable entity)"
 * subject = Reference(example-patient)
 * effectiveDateTime = "2025-10-01T09:00:00Z"
-* valueQuantity = 2 'a' "year"
+* valueQuantity = $ucum#a "years"
+  * value = 2
 * note.text = "Patient reports stopped smoking 2 years ago."
-
 
 
 Profile: LTLifeTrackTypeOfTobaccoUsed 
@@ -243,24 +237,24 @@ Description: "Records the type of tobacco product currently or previously used b
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * category = $observation-category#social-history "Social History"
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[0].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains loincCode 1..1 and sctCode 0..1
+* code.coding[loincCode].system = $loinc
 * code.coding[loincCode] = $loinc#81228-9 "Tobacco product"
+* code.coding[sctCode].system = $sct
 * code.coding[sctCode] = $sct#53661000146106 "Type of tobacco used"
-* subject 1.. MS
+* subject 1..
 * subject only Reference(LTBasePatient)
-* subject.reference 1.. MS
-* effective[x] 1.. MS
+* effective[x] 1..
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from LTTypeOfTobaccoUsed (preferred)
 * component ..0
-* component ^mustSupport = false
 
 // Example: Type of Tobacco Used
 Instance: example-type-of-tobacco-used

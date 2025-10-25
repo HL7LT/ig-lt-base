@@ -8,6 +8,7 @@ Description: "Defines the interpretation categories for cardiovascular disease r
 * ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * ^copyright = "Includes content from HL7 v3 Observation Interpretation CodeSystem (http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)."
+
 * $observation-interpretation#N "Normal"
 * $observation-interpretation#H "High"
 * $observation-interpretation#HU "Significantly high"
@@ -22,18 +23,14 @@ Description: "Records the patient’s cardiovascular prevention risk classificat
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
 * ^publisher = "HL7 Lithuanian"
-* ^jurisdiction = $m49.htm#001 "World"
+
 * category = $observation-category#social-history "Social History"
-* code = $sct#75367002 "Cardiovascular disease risk (observable entity)"
-* subject 1.. MS
-* subject only Reference(LTBasePatient)
+* code = $sct#827181004 "Risk of cardiovascular disease"
 * effective[x] 1.. MS
 * effective[x] only dateTime
 * effectiveDateTime ^comment = "The date and time when the cardiovascular risk assessment was performed."
 * value[x] only Quantity
-* valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = #%
-* valueQuantity.unit = "%"
+* valueQuantity = $ucum#% "%"
 * interpretation from LTCVDRiskGroup (extensible)
 * interpretation ^short = "Risk group classification (Normal, High, Significantly high)"
 * interpretation ^comment = """
@@ -44,7 +41,7 @@ The interpretation category is derived from the numeric cardiovascular risk perc
 - ≥ 30% → Significantly high (#HU)
 """
 * component ..0
-* component ^mustSupport = false
+
 
 // Example
 Instance: example-cvd-risk-group
@@ -54,9 +51,9 @@ Title: "Example LT Prevention Risk Group - High"
 Description: "Example showing a patient assessed as having a 24% cardiovascular disease risk, categorized as High."
 * status = #final
 * category = $observation-category#social-history "Social History"
-* code = $sct#75367002 "Cardiovascular disease risk (observable entity)"
+* code = $sct#827181004 "Risk of cardiovascular disease"
 * subject = Reference(example-patient)
 * effectiveDateTime = "2025-10-01T09:00:00Z"
-* valueQuantity = 24 '%'
+* valueQuantity.value = 24
 * interpretation = $observation-interpretation#H "High"
 * note.text = "Patient’s cardiovascular disease risk is 24%, categorized as High risk group."
