@@ -17,7 +17,7 @@ Description: "Lithuanian Base Condition profile, used for documenting general, s
 * abatement[x] MS
 * recordedDate MS
 
-* participant  0..1 MS
+* participant MS
 * participant.actor  only Reference(LTBasePractitioner or LTBasePractitionerRole or LTBasePatient or LTBaseRelatedPerson or Device)
 * participant.function MS
 * note MS
