@@ -13,8 +13,8 @@ version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
-#jurisdiction: urn:iso:std:iso:3166#LT #"Lithuania" temporarily disabled due to issues with IG publisher translation template
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
+jurisdiction: urn:iso:std:iso:3166#LT #"Lithuania" temporarily disabled due to issues with IG publisher translation template
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#440 // Lithuania (Code 440 from UN M.49)
 publisher:
   name: Lithuanian Medical Library
   url: https://medicinosnk.lt
