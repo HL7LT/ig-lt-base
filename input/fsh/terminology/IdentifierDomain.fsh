@@ -2,7 +2,7 @@ CodeSystem: LTBaseIdentifierDomain
 Id: identifier-domain
 Title: "Identifier Domain"
 Description: "Identifier Domain with translations in Lithuanian"
-* insert OriginalCodeSystemDraft(identifier-system)
+* insert OriginalCodeSystemDraft(identifier-domain)
 * #http://esveikata.lt/Identifier/SVEIDRAID "VEIDRA identifier" "VEIDRA identifier"
   * ^designation[0].language = #lt
   * ^designation[=].value = "SVEIDRA identifikatorius"
