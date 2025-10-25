@@ -67,6 +67,7 @@ publisher:
 
 parameters:
   special-url-base: https://hl7.lt/fhir
+  special-url: https://terminology.hl7.lt/fhir
   excludettl: true
   shownav: true
 
