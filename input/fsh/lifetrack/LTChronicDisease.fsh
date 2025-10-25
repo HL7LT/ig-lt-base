@@ -55,7 +55,7 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^publisher = "HL7 Lithuanian"
 * ^jurisdiction = $m49.htm#001 "World"
 * code from LTCVDHighRiskConditions (required)
-* clinicalStatus = #active
+* clinicalStatus =  $condition-clinical#active
 
 // Example: heart failure
 Instance: example-LTCvdChronicCondition-heart-failure
