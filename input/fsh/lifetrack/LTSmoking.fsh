@@ -6,7 +6,7 @@ Description: "HL7 LT SNOMED value set for smoking status."
 * ^language = #en
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^publisher = "HL7 Lithuania" 
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#266919005 "Never smoked tobacco (finding)"
@@ -25,7 +25,7 @@ Description: "Categorical representation of average cigarettes smoked per day."
 * ^language = #en
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^publisher = "HL7 Lithuania"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#266920004 "Trivial cigarette smoker (less than one cigarette/day)"
@@ -42,7 +42,7 @@ Description: "Records the type of tobacco product currently or previously used b
 * ^language = #en
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^publisher = "HL7 Lithuania"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#65568007 "Cigarette smoker (finding)"
@@ -66,6 +66,7 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 * category = $observation-category#social-history "Social History"
 * code.coding ^slicing.discriminator[0].type = #value
@@ -115,6 +116,7 @@ Description: "This profile constrains the Observation resource to represent Toba
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 
 * category = $observation-category#social-history "Social History"
@@ -155,6 +157,7 @@ Description: "Amount of time (e.g. years) the patient has used smoking or smokel
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 
 * category = $observation-category#social-history "Social History"
@@ -200,6 +203,7 @@ Description: "Records how long it has been since the patient stopped smoking, as
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 
 * category = $observation-category#social-history "Social History"
@@ -236,6 +240,7 @@ Description: "Records the type of tobacco product currently or previously used b
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 
 * category = $observation-category#social-history "Social History"

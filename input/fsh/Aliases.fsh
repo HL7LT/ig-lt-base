@@ -82,13 +82,12 @@ Alias: $valueset-supplement = http://hl7.org/fhir/StructureDefinition/valueset-s
 Alias: $ucum-vitalsignsrate = http://hl7.org/fhir/ValueSet/ucum-vitalsignsrate
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
-Alias: $AssociatedSituationExt = http://hl7.org/fhir/us/vitals/StructureDefinition/AssociatedSituationExt
-Alias: $MeasurementSettingExt = http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt
-Alias: $SleepStatusExt = http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt
-Alias: $ExerciseAssociationExt = http://hl7.org/fhir/us/vitals/StructureDefinition/ExerciseAssociationExt
+// Alias: $AssociatedSituationExt = http://hl7.org/fhir/us/vitals/StructureDefinition/AssociatedSituationExt
+// Alias: $MeasurementSettingExt = http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt
+// Alias: $SleepStatusExt = http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt
+// Alias: $ExerciseAssociationExt = http://hl7.org/fhir/us/vitals/StructureDefinition/ExerciseAssociationExt
 
-Alias: $bodyPositionVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
+//Alias: $bodyPositionVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
 
-Alias: $NumericResultIntVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntVS
-Alias: $NumericResultIntNonPanicVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntNonPanicVS
-
+//Alias: $NumericResultIntVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntVS
+//Alias: $NumericResultIntNonPanicVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntNonPanicVS

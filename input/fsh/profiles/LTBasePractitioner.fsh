@@ -1,6 +1,6 @@
 Profile: LTBasePractitioner
 Parent: Practitioner
-Id: lt-opractitioner
+Id: lt-practitioner
 Title: "LT Base Practitioner"
 Description: "Lithuanian Base Practitioner profile, used to define healthcare practitioners"
 * ^experimental = true

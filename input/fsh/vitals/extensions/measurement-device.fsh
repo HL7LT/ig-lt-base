@@ -16,7 +16,7 @@ Context: Observation
 * ^version = "5.1.0"
 * ^status = #retired
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
+//* ^url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * ^date = "2015-03-02"
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact.telecom.system = #url

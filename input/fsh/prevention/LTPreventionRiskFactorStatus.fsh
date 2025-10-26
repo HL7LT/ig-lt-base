@@ -60,6 +60,7 @@ Captures both the assessed risk probability and the treatment status.
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-26T11:00:00+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 * category = $observation-category#social-history "Social History"
 * code 1..1

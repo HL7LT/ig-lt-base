@@ -1,12 +1,19 @@
-Alias: $sleepStatusVS = http://hl7.org/fhir/us/vitals/ValueSet/sleepStatusVS
 
-Extension: SleepStatus
-Id: SleepStatusExt
-Title: "Sleep Status"
+Extension: SleepStatusExt
+Id: sleep-status-ext
+Title: "Sleep Status Extension"
 Description: "The state of wakefulness during the measurement."
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #oo
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 3
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"
+* ^extension[=].valueCode = #can-bind
 * ^version = "2.0.0"
 * ^status = #draft
-* ^url = "http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt"
+//* ^url = "http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt"
 * ^publisher = "HL7 International - Clinical Information Modeling Initiative"
 * ^contact[0].name = "HL7 International - Clinical Information Modeling Initiative"
 * ^contact[=].telecom.system = #url
@@ -20,7 +27,7 @@ Description: "The state of wakefulness during the measurement."
 * . ^definition = "The state of wakefulness during the measurement."
 * valueCodeableConcept 0..1
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $sleepStatusVS (extensible)
+* valueCodeableConcept from SleepStatus (extensible)
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 

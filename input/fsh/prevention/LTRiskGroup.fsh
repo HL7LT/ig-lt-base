@@ -5,7 +5,7 @@ Description: "Defines the interpretation categories for cardiovascular disease r
 * ^language = #en
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^publisher = "HL7 Lithuania"
 * ^copyright = "Includes content from HL7 v3 Observation Interpretation CodeSystem (http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)."
 
@@ -22,6 +22,7 @@ Description: "Records the patient’s cardiovascular prevention risk classificat
 * ^language = #en
 * ^version = "1.0.0"
 * ^date = "2025-10-25T19:10:07+03:00"
+* ^experimental = true
 * ^publisher = "HL7 Lithuanian"
 
 * category = $observation-category#social-history "Social History"

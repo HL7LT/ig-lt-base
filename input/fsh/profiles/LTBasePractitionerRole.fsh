@@ -1,6 +1,6 @@
 Profile: LTBasePractitionerRole
 Parent: PractitionerRole
-Id: lt-opractitioner-role
+Id: lt-practitioner-role
 Title: "LT Base Practitioner Role"
 Description: "Lithuanian Base Practitioner Role profile, used to define roles of the healthcare practitioner in the healthcare facilities"
 * ^experimental = true

@@ -68,7 +68,8 @@ publisher:
 
 parameters:
   special-url-base: https://hl7.lt/fhir
-  special-url: https://terminology.hl7.lt/fhir
+  special-url: https://terminology.hl7.lt/fhir, http://hl7.org/fhir/us/vitals/StructureDefinition
+
   excludettl: true
   shownav: true
 
