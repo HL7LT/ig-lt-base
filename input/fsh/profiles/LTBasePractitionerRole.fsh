@@ -12,3 +12,14 @@ Description: "Lithuanian Base Practitioner Role profile, used to define roles of
 * organization only Reference(LTBaseOrganization)
 * code MS
 //* code from PractitionerRoleCodeVS (required)
+
+Instance: example-practitioner-role
+InstanceOf: LTBasePractitionerRole
+Usage: #example
+Title: "Dr. Petras Kazlauskas at Vilniaus miesto ligoninė - LT Base Practitioner Role Example"
+Description: "An example Practitioner Role conforming to the Lithuanian Base Profile."
+
+* practitioner = Reference(example-practitioner)
+* organization = Reference(example-organization)
+* code[0] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
+* active = true

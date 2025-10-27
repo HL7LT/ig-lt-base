@@ -114,3 +114,25 @@ Usage: #example
 
 // * location[0].location = Reference(example-location)
 // * location[0].status = #completed
+
+
+Instance: example-pencounter
+InstanceOf: LTBaseEncounter
+Title: "Example Psychiatric Encounter"
+Description: "Example of an psychiatric encounter"
+Usage: #example
+* status = #completed "Completed"
+* class = $v3-ActCode#IMP "Inpatient encounter"
+* priority = $v3ActPriority#EM "Emergency"
+* subject = Reference(example-patient)
+* participant
+  * type = $v3-ParticipationType#ATND "attender"
+  * period
+    * start = "2024-02-01T09:00:00Z"
+    * end = "2024-02-12T10:30:00Z"
+  * actor = Reference(example-practitioner)
+* actualPeriod
+  * start = "2024-02-01T09:00:00Z"
+  * end = "2024-02-12T10:30:00Z"
+* serviceProvider = Reference(example-organization)
+
