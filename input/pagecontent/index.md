@@ -40,5 +40,5 @@ LTBase profiles are designed to be flexible and highly reusable across various u
 
 | Name                                             | Role                          | Organization                                    |
 | ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
-| [Igor Bossenko](https://www.linkedin.com/in/igor-bossenko/)     | Primary Author                | [HELEX](https://helex.org) |
-| [Some Person](#) | Co-Author                 | [LMB](https://lmb.lt)               |
+| [Some Person](#) | Primary Author                 | [VĮ Registrų centras](https://www.registrucentras.lt)               |
+| [Igor Bossenko](https://about.askigor.eu)     | Co-Author                | [HELEX](https://helex.health) |
