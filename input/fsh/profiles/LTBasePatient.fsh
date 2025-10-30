@@ -1,5 +1,5 @@
 Profile: LTBasePatient
-Parent: Patient
+Parent: PatientEu
 Id: lt-patient
 Title: "LT Base Patient"
 Description: "Lithuanian Base Patient profile, used to represent patients administrative information"
@@ -8,11 +8,21 @@ Description: "Lithuanian Base Patient profile, used to represent patients admini
 
 * identifier 1..* MS
   * extension contains data-absent-reason named data-absent-reason 0..1 MS
-* gender MS
-* insert HumanName
-* active MS
-* birthDate MS 
+  * system and value MS
+* identifier.system from PatientIdentifier (extensible)
 
+* gender MS
+* name MS
+  * use and text and family and given and period MS
+* active MS
+* birthDate MS
+* deceased[x] MS
+* telecom MS
+  * system and value and use MS
+* generalPractitioner only Reference(LTBasePractitioner or LTBaseOrganization or LTBasePractitionerRole)
+* managingOrganization only Reference(LTBaseOrganization)
+* link
+  * other only Reference(LTBasePatient or LTBaseRelatedPerson)
 
 
 Instance: example-patient

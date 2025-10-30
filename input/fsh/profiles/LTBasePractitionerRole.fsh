@@ -1,5 +1,5 @@
 Profile: LTBasePractitionerRole
-Parent: PractitionerRole
+Parent: PractitionerRoleEuCore
 Id: lt-practitioner-role
 Title: "LT Base Practitioner Role"
 Description: "Lithuanian Base Practitioner Role profile, used to define roles of the healthcare practitioner in the healthcare facilities"
@@ -12,6 +12,9 @@ Description: "Lithuanian Base Practitioner Role profile, used to define roles of
 * organization only Reference(LTBaseOrganization)
 * code MS
 //* code from PractitionerRoleCodeVS (required)
+* location MS
+* location only Reference(LTBaseLocation)
+* specialty MS
 
 Instance: example-practitioner-role
 InstanceOf: LTBasePractitionerRole

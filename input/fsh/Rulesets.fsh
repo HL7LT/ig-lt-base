@@ -4,12 +4,9 @@ RuleSet: MultilingualName(entityType)
   * extension contains translation named translation 0..* MS
     * ^short = "Name {entityType} (in English)"
 
-RuleSet: HumanName
-* name MS
-  * use and text and family and given and suffix and period MS
 
 RuleSet: OriginalCodeSystemDraft(id)
-* ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
+* ^url = "https://hl7.lt/fhir/tx/CodeSystem/{id}"
 * ^status = #draft
 * ^content = #complete
 * ^caseSensitive = true
@@ -20,7 +17,7 @@ RuleSet: OriginalCodeSystemDraft(id)
 
 
 RuleSet: OriginalCodeSystem(id)
-* ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
+* ^url = "https://hl7.lt/fhir/tx/CodeSystem/{id}"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -31,7 +28,7 @@ RuleSet: OriginalCodeSystem(id)
 
 
 RuleSet: SupplementCodeSystemDraft(id, supplements, version)
-* ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
+* ^url = "https://hl7.lt/fhir/tx/CodeSystem/{id}"
 * ^status = #draft
 * ^content = #supplement
 * ^supplements = {supplements}
@@ -42,7 +39,7 @@ RuleSet: SupplementCodeSystemDraft(id, supplements, version)
 
 
 RuleSet: SupplementCodeSystem(id, supplements, version)
-* ^url = "https://hl7.lt/fhir/CodeSystem/{id}"
+* ^url = "https://hl7.lt/fhir/tx/CodeSystem/{id}"
 * ^status = #active
 * ^content = #supplement
 * ^supplements = {supplements}

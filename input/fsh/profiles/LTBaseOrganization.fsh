@@ -1,5 +1,5 @@
 Profile: LTBaseOrganization
-Parent: Organization
+Parent: OrganizationEuCore
 Id: lt-organization
 Title: "LT Base Organization"
 Description: "Lithuanian Base Organization profile, used to define healthcare organizations and sub-units"
@@ -7,32 +7,34 @@ Description: "Lithuanian Base Organization profile, used to define healthcare or
 * ^status = #active
 
 * identifier 1.. MS
+  * system and value MS
 * identifier ^short = "Įstaigos identifikatorius"
 * identifier.system from LTBaseOrganizationIdentifier (extensible)
 
 * active 1.. MS
 * active ^short = "Ar įstaiga yra veikianti / Whether the organization's record is still in active use"
 
-* name 1.. MS
+* name MS
 * name ^short = "Įstaigos pavadinimas / Title"
 * insert MultilingualName(organizations)
 
-* contact 1.. MS
+* contact  MS
 * contact ^short = "Įstaigos kontaktinė informacija / Official contact details for the Organization"
-* contact.telecom 1..
 * contact.telecom ^slicing.discriminator.type = #value
 * contact.telecom ^slicing.discriminator.path = "system"
 * contact.telecom ^slicing.rules = #open
 * contact.telecom ^short = "Contact details (phone/email and more)"
-* contact.telecom.value 1..
+* contact.telecom.system MS
+* contact.telecom.use MS
+* contact.telecom.value 1.. MS
 * contact.telecom contains
-    Phone 0..* MS and
-    Email 0..* MS
-* contact.telecom[Phone] ^short = "Telefono numeris / Phone number"
-* contact.telecom[Phone].system = #phone (exactly)
-* contact.telecom[Email] ^short = "Elektroninio pašto adresas / Email"
-* contact.telecom[Email].system = #email (exactly)
-* contact.address 1.. MS
+    phone 0..* MS and
+    email 0..* MS
+* contact.telecom[phone] ^short = "Telefono numeris / Phone number"
+* contact.telecom[phone].system = #phone (exactly)
+* contact.telecom[email] ^short = "Elektroninio pašto adresas / Email"
+* contact.telecom[email].system = #email (exactly)
+* contact.address MS
 * contact.address ^short = "Įstaigos adresas / Adress"
 
 * partOf only Reference(LTBaseOrganization)
@@ -58,7 +60,7 @@ Usage: #example
       * valueString = "Lithuanian Medical Library"
 * contact[0]
   * purpose = #work
-  * telecom[Phone]
+  * telecom[phone]
     * value = "+37061234567"
     * use = #work
   * address
@@ -82,7 +84,7 @@ Usage: #example
 * name = "Vilniaus miesto ligoninė"
 * contact[0]
   * purpose = #work
-  * telecom[Phone]
+  * telecom[phone]
     * value = "+37061234567"
     * use = #work
   * address
