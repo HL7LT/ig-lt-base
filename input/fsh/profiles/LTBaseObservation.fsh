@@ -38,7 +38,7 @@ Description: "Lithuanian Base Observation profile, used to represent vitals, dem
 * note MS
 // * bodySite from $bodysite
 * bodyStructure MS
-* bodyStructure only Reference(BodyStructureEuCore)
+* bodyStructure only Reference(BodyStructure)
 // * method from $observation-methods
 * specimen MS
 * device MS
