@@ -7,7 +7,7 @@ Description: "Lithuanian Base Service Request profile, used for documenting gene
 * ^status = #active
 
 * identifier MS
-* basedOn only Reference(LTBaseCarePlan or LTBaseServiceopRequest or MedicationRequest)
+* basedOn only Reference(LTBaseCarePlan or LTBaseServiceRequest or MedicationRequest)
 * status MS
 * intent MS
 * priority MS
