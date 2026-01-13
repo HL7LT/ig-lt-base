@@ -11,7 +11,9 @@ Description: "Lithuanian Base DiagnosticReport profile, used for interpretation 
 * basedOn only Reference(LTBaseServiceRequest or LTBaseCarePlan or 	ImmunizationRecommendation or MedicationRequest or NutritionOrder)
 * status MS
 * category MS
+* category from $v2-0074 (preferred)
 * code MS
+* code from ReportCode (preferred)
 * subject 1..1 MS
 * subject only Reference(LTBasePatient or Group or Device or LTBaseLocation or LTBaseOrganization or LTBasePractitioner or Medication or Substance or BiologicallyDerivedProduct)
 * encounter MS
