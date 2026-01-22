@@ -91,5 +91,3 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 
 //Alias: $NumericResultIntVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntVS
 //Alias: $NumericResultIntNonPanicVS = http://hl7.org/fhir/us/vitals/ValueSet/NumericResultIntNonPanicVS
-
-Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074

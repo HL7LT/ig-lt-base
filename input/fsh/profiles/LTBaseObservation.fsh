@@ -1,5 +1,5 @@
 Profile: LTBaseObservation
-Parent: Observation
+Parent: ObservationEu
 Id: lt-observation 
 Title: "LT Base Observation"
 Description: "Lithuanian Base Observation profile, used to represent vitals, demographic, clinical and laboratory observations"

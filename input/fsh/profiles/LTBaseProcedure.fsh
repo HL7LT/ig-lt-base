@@ -1,5 +1,5 @@
 Profile: LTBaseProcedure
-Parent: Procedure
+Parent: ProcedureEu
 Id: lt-procedure
 Title: "LT Base Procedure"
 Description: "Lithuanian Base Procedure profile, used for documenting healthcare procedures."
@@ -10,7 +10,8 @@ Description: "Lithuanian Base Procedure profile, used for documenting healthcare
 * category MS
 * code MS
 * subject 1.. MS
-* subject only Reference(LTBasePatient or Group or Device or LTBaseLocation or LTBasePractitioner or LTBaseOrganization)
+// EU limitation: * subject only Reference(LTBasePatient or Group or Device or LTBaseLocation or LTBasePractitioner or LTBaseOrganization)
+* subject only Reference(LTBasePatient)
 * encounter MS
 * encounter only Reference(LTBaseEncounter)
 * occurrence[x] MS
