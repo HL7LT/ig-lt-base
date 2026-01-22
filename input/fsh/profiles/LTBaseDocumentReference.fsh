@@ -1,5 +1,5 @@
 Profile: LTBaseDocumentReference
-Parent: DocumentReference
+Parent: DocumentReferenceEu
 Id: lt-document-reference
 Title: "LT Base Document Reference"
 Description: "Lithuanian Base Document Reference profile, used for composing documents."

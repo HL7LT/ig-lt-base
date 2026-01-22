@@ -1,5 +1,5 @@
 Profile: LTBaseComposition
-Parent: Composition
+Parent: CompositionEu
 Id: lt-composition
 Title: "LT Base Composition"
 Description: "Lithuanian Base Composition profile, used for creating healthcare compositions."

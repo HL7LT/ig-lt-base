@@ -9,11 +9,11 @@ name: LTBase
 title: Lithuanian Base Implementation Guide
 description: Lithuanian Base Implementation Guide
 status: draft # draft | active | retired | unknown
-version: 0.2.0
+version: 0.3.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
-jurisdiction: urn:iso:std:iso:3166#LT #"Lithuania" temporarily disabled due to issues with IG publisher translation template
+jurisdiction: urn:iso:std:iso:3166#LT 
 #jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#440 // Lithuania (Code 440 from UN M.49)
 publisher:
   name: Lithuanian Medical Library
@@ -22,6 +22,7 @@ publisher:
 
 dependencies:
   hl7.fhir.eu.base-r5: 0.1.0
+  hl7.fhir.eu.extensions: 1.2.0
 #  hl7.fhir.uv.ips.r5: 4.0.0  #FHIR IPS R5 base
 #   fhir.base.template: 0.8.1
 #   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
@@ -69,7 +70,7 @@ dependencies:
 
 parameters:
   special-url-base: https://hl7.lt/fhir
-  special-url: https://terminology.hl7.lt/fhir, http://hl7.org/fhir/us/vitals/StructureDefinition
+  special-url: https://terminology.hl7.lt/fhir, https://hl7.lt/fhir/tx, http://hl7.org/fhir/us/vitals/StructureDefinition
 
   excludettl: true
   shownav: true
@@ -168,6 +169,25 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
+
+groups:
+  GroupA:
+    name: "EU profiles"
+    description: "Temporary copy of the EU profiles"
+    resources:
+    - StructureDefinition/CarePlanEu
+    - StructureDefinition/CompositionEu
+    - StructureDefinition/ConditionEu
+    - StructureDefinition/DocumentReferenceEu
+    - StructureDefinition/EndpointEu
+    - StructureDefinition/ObservationEu
+    - StructureDefinition/ProcedureEu
+    - StructureDefinition/CrossVersionMediaViewExtension
+    - StructureDefinition/quantity-eu
+    - StructureDefinition/range-eu
+    - StructureDefinition/SimpleQuantityEu
+
+
 # groups:
 #   GroupA:
 #     name: Group A

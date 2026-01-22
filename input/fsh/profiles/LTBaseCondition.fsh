@@ -1,5 +1,5 @@
 Profile: LTBaseCondition
-Parent: Condition
+Parent: ConditionEu
 Id: lt-condition 
 Title: "LT Base Condition"
 Description: "Lithuanian Base Condition profile, used for documenting general, symptoms, conditions, and their characteristics."

@@ -1,5 +1,5 @@
 Profile: LTBaseCarePlan
-Parent: CarePlan
+Parent: CarePlanEu
 Id: lt-care-plan
 Title: "LT Base CarePlan"
 Description: "Lithuanian Base CarePlan profile, used for describing care plans."
@@ -21,9 +21,11 @@ Description: "Lithuanian Base CarePlan profile, used for describing care plans."
 * subject only Reference(LTBasePatient or Group)
 * encounter MS
 * encounter only Reference(LTBaseEncounter)
-* custodian only Reference(LTBaseOrganization or LTBasePractitionerRole or LTBasePractitioner or LTBaseCareTeam or LTBasePatient or LTBaseRelatedPerson or Device)
+// LTBaseOrganization and LTBasePractitioner are removed because of limitation of the EU profile
+* custodian only Reference(LTBasePractitionerRole or LTBaseCareTeam or LTBasePatient or LTBaseRelatedPerson or Device)
 * contributor MS
-* contributor only Reference(LTBaseOrganization or LTBasePractitionerRole or LTBasePractitioner or LTBaseCareTeam or LTBasePatient or LTBaseRelatedPerson or Device)
+// LTBaseOrganization and LTBasePractitioner are removed because of limitation of the EU profile
+* contributor only Reference(LTBasePractitionerRole or LTBaseCareTeam or LTBasePatient or LTBaseRelatedPerson or Device)
 * careTeam only Reference(LTBaseCareTeam)
 * addresses only CodeableReference(LTBaseCondition)
 * goal only Reference(LTBaseGoal)
