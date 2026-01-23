@@ -20,8 +20,8 @@ Description: "A observation profile for the EU."
 * effective[x] 1..
 * performer.extension contains PerformerFunction named performerFunction 0..1
 // * value[x] 1..
-* value[x] only $EuQuantity or CodeableConcept or string or integer or boolean or $EuRangeUrl or Ratio or SampledData or time or dateTime or Period or Attachment or Reference(MolecularSequence)
+* value[x] only $EuQuantityUrl or CodeableConcept or string or integer or boolean or $EuRangeUrl or Ratio or SampledData or time or dateTime or Period or Attachment or Reference(MolecularSequence)
 * value[x].extension contains DataAbsentReason named dataAbsentReason 0..1
 * component.value[x] 1..
-* component.value[x] only $EuQuantity or CodeableConcept or string or integer or boolean or $EuRangeUrl or Ratio or SampledData or time or dateTime or Period or Attachment or Reference(MolecularSequence)
+* component.value[x] only $EuQuantityUrl or CodeableConcept or string or integer or boolean or $EuRangeUrl or Ratio or SampledData or time or dateTime or Period or Attachment or Reference(MolecularSequence)
 * component.value[x].extension contains DataAbsentReason named dataAbsentReason 0..1
