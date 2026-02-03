@@ -1,5 +1,5 @@
 Profile: LTBaseObservation
-Parent: ObservationEu
+Parent: Observation
 Id: lt-observation 
 Title: "LT Base Observation"
 Description: "Lithuanian Base Observation profile, used to represent vitals, demographic, clinical and laboratory observations"
@@ -22,8 +22,8 @@ Description: "Lithuanian Base Observation profile, used to represent vitals, dem
 * code MS 
 // * code from $observation-codes
 * subject MS
-// * subject only Reference(LTBasePatient or LTBaseLocation or LTBaseOrganization or Procedure or LTBasePractitioner or Medication)
-* subject only Reference(LTBasePatient or LTBaseOrganization or Procedure or Medication)
+* subject only Reference(LTBasePatient or LTBaseLocation or LTBaseOrganization or Procedure or LTBasePractitioner or Medication)
+//* subject only Reference(LTBasePatient)
 * focus MS
 * encounter MS
 * encounter only Reference(LTBaseEncounter)
@@ -103,3 +103,21 @@ Usage: #example
 * component[=].valueQuantity.system = "http://unitsofmeasure.org"
 * component[=].valueQuantity.code = #mm[Hg]
 * component[=].interpretation = $observation-interpretation#N "Normal"
+
+
+
+
+// Example
+Instance: example-gland-density-fatty
+InstanceOf: LTBaseObservation
+Usage: #example
+Title: "Example – Breast Density: Fatty"
+* status = #final
+* category = $observation-category#exam "Exam"
+* code = $sct#733851004 "Breast consistency (observable entity)"
+* subject = Reference(example-patient)
+* performer = Reference(Practitioner/example-practitioner)
+* effectiveDateTime = "2025-10-01T09:00:00Z"
+* valueCodeableConcept = $sct#129716005
+* bodySite = $sct#76752008 "Breast"
+* note.text = "Mammography shows predominantly fatty breast density."
