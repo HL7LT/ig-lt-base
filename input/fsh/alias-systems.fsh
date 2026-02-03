@@ -70,3 +70,5 @@ Alias: $valueset-procedure-reason.html = https://www.hl7.org/fhir/valueset-proce
 Alias: $ImSectionEmptyReason = http://hl7.eu/fhir/imaging-r5/ValueSet/ImSectionEmptyReason
 
 Alias: $v2-0074-vs = http://terminology.hl7.org/ValueSet/v2-0074
+
+Alias: $lab-obsCode-eu-lab = http://hl7.eu/fhir/base/ValueSet/lab-obsCode-eu-lab
