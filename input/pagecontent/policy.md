@@ -53,7 +53,7 @@ Example for a Lithuanian Organization:
 {
   "resourceType": "StructureDefinition",
   "id": "organization-lt",
-  "url": "https://fhir.hl7.lt/StructureDefinition/Organization-lt",
+  "url": "https://hl7.lt/fhir/base/StructureDefinition/organization-lt",
   "version": "1.0.0"
 }
 ```
@@ -67,8 +67,8 @@ Example for a Lithuanian Organization:
 
 * In messaging and cross-border exchange, references **SHOULD** be logical references using a URI from a known Lithuanian **CodeSystem** or **NamingSystem**.
 * **Common Lithuanian URIs:**
-  * Personal Code: `https://fhir.hl7.lt/NamingSystem/asmens-kodas`
-  * Healthcare Provider Code (Įstaigos kodas): `https://fhir.hl7.lt/NamingSystem/istaigos-kodas`
+  * Personal Code: `https://tx.hl7.lt/NamingSystem/asmens-kodas`
+  * Healthcare Provider Code (Įstaigos kodas): `https://tx.hl7.lt/NamingSystem/istaigos-kodas`
 
 ---
 
@@ -78,40 +78,55 @@ A unified naming strategy is adopted for **Lithuanian** assets to ensure they ar
 
 #### N01: **Resource IDs can only use up to 64 letters,numbers, hyphens and periods.**
 
-Resource Ids must be combination of letters, numbers, hyphens, and periods. Ensure that the name is at least 1 character long but does not exceed 64 characters in length. The expression is `[A-Za-z0-9\-\.]{1,64}`.
+Resource Ids must be combination of letters, numbers, hyphens, and periods. Ensure that the name is at least 1 character long but does not exceed 64 characters in length. 
+
+The expression is `[A-Za-z0-9\-\.]{1,64}`.
 
 #### N02: **Business names must start with an uppercase character, and may contain letters and numbers.**
 
-Names must start with an uppercase letter followed by up to 254 characters that can be a mix of letters, numbers, or underscores. The expression is `^[A-Z]([A-Za-z0-9_]){1,254}$`. The use of underscores is to be avoided.
+Names must start with an uppercase letter followed by up to 254 characters that can be a mix of letters, numbers, or underscores. 
+
+The expression is `^[A-Z]([A-Za-z0-9_]){1,254}$`. The use of underscores is to be avoided.
 
 #### N03: **Convention for StructureDefinition definition**
 
 To ensure uniqueness across the global FHIR ecosystem and clarity within the European Health Data Space (EHDS), all Lithuanian FHIR assets **MUST** follow this structured naming convention for profiles, extensions and data types.
 
-* **Base URL**: The official publishing URL. For Lithuania, this is `https://fhir.hl7.lt` (or the specific governmental domain).
+* **Base URL**: The official publishing URL. For Lithuania, this is `https://hl7.lt/fhir/[**igcode**]` (or the specific governmental domain).
 * **Country Suffix**: The suffix **Lt** **MUST** be applied for all Lithuanian assets.
 * **IG Suffix**: The IG code **SHOULD** follow to country suffix.
 * **Machine Name**: The resource (machine) name should use the [PascalCase](https://wiki.c2.com/?PascalCase).
 * **Id**: The resource id should be in lowercase and all words **SHOULD** be separated by hypnes `-`.
 * **Language**: Technical name segments **MUST** be in English.
 
-**Naming Requirements:**
+**Resource Naming Requirements:**
 
 * **Resource Name**: [**BusinessName**][**Lt**][**Igcode**] in PascalCase.
 * **Resource Id**: [**business-name**]-[**lt**]-[**igcode**] in lowercase with hyphens.
-* **Title**: Human-readable name (e.g., "Patient LT").
+* **Title**: Human-readable version of the business name and optionally country and IG codes in the brackets.
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | --- | --- | --- | --- |
-| PatientLt | patient-lt | [https://fhir.hl7.lt/base/StructureDefinition/patient-lt](https://www.google.com/search?q=https://fhir.hl7.lt/StructureDefinition/lt-patient) | Patient (LT) |
-| PractitionerLTBase | practitioner-lt-base | [https://fhir.hl7.lt/StructureDefinition/practitioner-lt](https://www.google.com/search?q=https://fhir.hl7.lt/StructureDefinition/Practitioner-lt) | Practitioner (LT Base) |
-| PathologyOrderLTLab | pathology-order-lt-lab | [https://fhir.hl7.lt/StructureDefinition/pathology-order-lt-lab](https://www.google.com/search?q=https://fhir.hl7.lt/StructureDefinition/pathology-order-lt-lab) | Pathology Order (LT Lab) |
+| PatientLt | patient-lt | [https://hl7.lt/fhir/base/StructureDefinition/patient-lt](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/patient-lt) | Patient (LT core) |
+| PractitionerLTBase | practitioner-lt-base | [https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt-base](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt-base) | Practitioner (LT Base) |
+| PathologyOrderLTLab | pathology-order-lt-lab | [https://hl7.lt/fhir/lab/StructureDefinition/pathology-order-lt-lab](https://www.google.com/search?q=hhttps://hl7.lt/fhir/lab/StructureDefinition/pathology-order-lt-lab) | Pathology Order (LT Lab) |
+
+**Instance Naming Requirements:**
+
+* **Title**: [**ResourceType**]: {**IGcode -**} [**BusinessName**] [**"Example"**] - Human-readable name (e.g., "Patient: Animal Example", where `IGcode -` is optional).
+* **Instance**: [**resourceType**]-[**business-name**]-[**example**] in lowercase with hyphens.
+
+| Resource Type | Instance | Title |
+| --- | --- | --- | --- | --- |
+| Patient | patient-male-example | Patient: Male Example |
+| Observation | observation-prostate-pirads-lesion1-example | Observation: PI-RADS Assessment (Lesion 1) Example |
+| Observation | observation-lab-hba1c-example | Observation: Lab - HbA1c Example |
 
 ---
 
 #### N04: **CodeSystem and ValueSet convention**
 
-* **Base URL**: The official URL of the terminology server. For Lithuania, this is `https://tx.hl7.lt`.
+* **Base URL**: The official URL of the terminology server. For Lithuania, this is `https://tx.hl7.lt/fhir`.
 * **Machine Name**: The resource (machine) name should use the [PascalCase](https://wiki.c2.com/?PascalCase).
 * **Id**: The resource id should be in lowercase and all words **SHOULD** be separated by hypnes `-`.
 * **Language**: Technical name segments **MUST** be in English.
@@ -121,8 +136,8 @@ To ensure uniqueness across the global FHIR ecosystem and clarity within the Eur
 
 | Resource Name | Resource Id | Resource Url |
 | --- | --- | --- |
-| IdentitySystem | identity-system | [https://tx.hl7.lt/CodeSystem/identity-system](https://www.google.com/search?q=https://tx.hl7.lt/CodeSystem/identity-system) |
-| MedicalSpecialtyVS | medical-specialty | [https://tx.hl7.lt/ValueSet/medical-specialty](https://www.google.com/search?q=https://tx.hl7.lt/ValueSet/medical-specialty) |
+| IdentitySystem | identity-system | [https://tx.hl7.lt/fhir/CodeSystem/identity-system](https://www.google.com/search?q=https://tx.hl7.lt/CodeSystem/identity-system) |
+| MedicalSpecialtyVS | medical-specialty | [https://tx.hl7.lt/fhir/ValueSet/medical-specialty](https://www.google.com/search?q=https://tx.hl7.lt/ValueSet/medical-specialty) |
 
 ---
 
@@ -134,9 +149,9 @@ The list of the registred and supported namespaces:
 
 | API Name | Provider Code | Base URL |
 | --- | --- | --- |
-| Lithuanian (FHIR) Base | LT | [https://fhir.hl7.lt](https://www.google.com/url?sa=E&source=gmail&q=https://fhir.hl7.lt) |
+| Lithuanian (FHIR) Base | LT | [https://hl7.lt/fhir](https://www.google.com/url?sa=E&source=gmail&q=https://fhir.hl7.lt) |
 | LT National Health System | E-SVEIKATA | [https://api.esveikata.lt/fhir](https://www.google.com/search?q=https://api.esveikata.lt/fhir) |
 | National Health Insurance Fund | VLK | [https://api.vlk.lt/fhir](https://www.google.com/search?q=https://api.vlk.lt/fhir) |
-| Terminology Server | TX | [https://tx.hl7.lt](https://www.google.com/url?sa=E&source=gmail&q=https://tx.hl7.lt) |
+| Terminology Server | TX | [https://tx.hl7.lt/fhir](https://www.google.com/url?sa=E&source=gmail&q=https://tx.hl7.lt) |
 
 ---
