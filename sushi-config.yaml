@@ -48,9 +48,16 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
+pages:
+  index.md:
+    title: Home
+  policy.md:
+    title: Policy
+  download.md:
+    title: Download
+  changes.md:
+    title: Changes    
+
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -100,7 +107,12 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Policy: policy.html
   Artifacts: artifacts.html
+  Links:
+    Downloads: download.html
+    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+  Changes: changes.html  
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
