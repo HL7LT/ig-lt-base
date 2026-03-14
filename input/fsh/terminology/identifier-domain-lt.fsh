@@ -1,8 +1,10 @@
-CodeSystem: LTBaseIdentifierDomain
-Id: identifier-domain
+CodeSystem: IdentifierDomainLt
+Id: identifier-domain-lt
 Title: "Identifier Domain"
 Description: "Identifier Domain with translations in Lithuanian"
-* insert OriginalCodeSystemDraft(identifier-domain)
+* ^url = $identifier-domain-lt-url
+* ^experimental = false          
+* ^caseSensitive = false
 * #http://esveikata.lt/Identifier/SVEIDRAID "SVEIDRA identifier" "SVEIDRA identifier"
   * ^designation[0].language = #lt
   * ^designation[=].value = "SVEIDRA identifikatorius"
@@ -42,37 +44,3 @@ Description: "Identifier Domain with translations in Lithuanian"
 * #http://esveikata.lt/classifiers/IdentityDocument/SerieNumber "SerieNumber" "SerieNumber"
   * ^designation[0].language = #lt
   * ^designation[=].value = "SerieNumber"
-
-ValueSet: LTBaseOrganizationIdentifier
-Id: organization-identifier
-Title: "Organization Identifier"
-Description: "A curated list of identifier systems for organizations."
-* ^language = #en
-* ^version = "1.0.0"
-* ^experimental = false
-* ^publisher = "HL7 Lithuania" 
-
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/SVEIDRAID
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/SPILIS
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/ESPBI
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/VAPRIS
-
-
-ValueSet: PatientIdentifier
-Id: patient-identifier
-Title: "Patient Identifier"
-Description: "A curated list of identifier systems for patients."
-* ^language = #en
-* ^version = "1.0.0"
-* ^experimental = false
-* ^publisher = "HL7 Lithuania" 
-
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/ESPBI
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/PersonalCode
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/Patient/ESI
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/Patient/DIK
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/Patient/SveidraID
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/Patient/eFormNumber
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/Patient/ForeignPersonalCode
-* LTBaseIdentifierDomain#http://esveikata.lt/Identifier/eDelivery
-* LTBaseIdentifierDomain#http://esveikata.lt/classifiers/IdentityDocument/SerieNumber

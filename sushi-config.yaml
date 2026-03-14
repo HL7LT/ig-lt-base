@@ -23,7 +23,7 @@ publisher:
 dependencies:
   hl7.fhir.eu.base-r5: 0.1.0
   hl7.fhir.eu.extensions: 1.2.0
-  lt.hl7.fhir.eu: dev
+  lt.hl7.fhir.eu: current
 
 
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -66,7 +66,12 @@ pages:
 
 parameters:
   special-url-base: https://hl7.lt/fhir
-  special-url: https://terminology.hl7.lt/fhir, https://hl7.lt/fhir/tx, http://hl7.org/fhir/us/vitals/StructureDefinition
+  special-url: 
+    - https://tx.hl7.lt/fhir
+    - https://tx.hl7.lt/fhir/CodeSystem/identifier-domain
+    - https://tx.hl7.lt/fhir/ValueSet/patient-identifier
+    - https://tx.hl7.lt/fhir/ValueSet/organization-identifier
+    - http://terminology.hl7.org/ValueSet/EncounterClass
 
   excludettl: true
   shownav: true

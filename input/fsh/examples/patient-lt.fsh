@@ -1,34 +1,7 @@
-Profile: LTBasePatient
-Parent: PatientEu
-Id: lt-patient
-Title: "LT Base Patient"
-Description: "Lithuanian Base Patient profile, used to represent patients administrative information"
-* ^experimental = true
-* ^status = #active
-
-* identifier 1..* MS
-  * extension contains data-absent-reason named data-absent-reason 0..1 MS
-  * system and value MS
-* identifier.system from PatientIdentifier (extensible)
-
-* gender MS
-* name MS
-  * use and text and family and given and period MS
-* active MS
-* birthDate MS
-* deceased[x] MS
-* telecom MS
-  * system and value and use MS
-* generalPractitioner only Reference(LTBasePractitioner or LTBaseOrganization or LTBasePractitionerRole)
-* managingOrganization only Reference(LTBaseOrganization)
-* link
-  * other only Reference(LTBasePatient or LTBaseRelatedPerson)
-
-
-Instance: example-patient
-InstanceOf: LTBasePatient // Links this instance to the specific profile
+Instance: patient-example
+InstanceOf: PatientLt
 Usage: #example
-Title: "Jonas Petrauskas - LT Base Patient Example"
+Title: "Patient: Jonas Petrauskas (example)"
 Description: "An example Patient conforming to the Lithuanian Base Profile."
 
 // Identifiers (Required: 1..* MS)
@@ -65,4 +38,3 @@ Description: "An example Patient conforming to the Lithuanian Base Profile."
 * address[0].city = "Vilnius"
 * address[0].country = "LT"
 * address[0].postalCode = "LT-01103"
-
