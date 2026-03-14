@@ -12,8 +12,8 @@ This IG is version 5.0.0, while the IG 'fhir.dicom' is from version 4.0.1
 The ImplementationGuide is based on FHIR version 5.0.0 but package fhir.dicom#2025.2.20250411 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try 
 
 # IG publisher can't find supplements for ISO 3166 - this can be ignored
-The value provided ('LT') was not found in the value set 'ISO 3166 2 character codes' (https://tx.lmb.lt/fhir/core/ValueSet/iso-3166-2%
-Required supplement not found: https://tx.lmb.lt/fhir/core/CodeSystem/iso3166%
+The value provided ('LT') was not found in the value set 'ISO 3166 2 character codes' (https://tx.hl7.lt/fhir/core/ValueSet/iso-3166-2%
+Required supplement not found: https://tx.hl7.lt/fhir/core/CodeSystem/iso3166%
 
 # Issues with IG publisher for i18n - this can be ignored
 The image source 'assets/images/ltu.svg' cannot be resolved
@@ -24,5 +24,10 @@ An HTML fragment from the set%
 Resource has a language (lt), and the XHTML has a lang (en), but they differ 
 Resource has a language (ru), and the XHTML has a lang (en), but they differ
 
-# 
-the canonical URL (https://hl7.lt/fhir/base/StructureDefinition/AssociatedSituationExt) does not match the URL (http://hl7.org/fhir/us/vitals/StructureDefinition/AssociatedSituationExt). Use the special-url parameter if you really mean for it not to match
+# Deprecated jurisdiction ValueSet from FHIR R5 - this is a known issue with the FHIR spec
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# These elements are not mandatory in our local context and are handled differently
+Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+CodeSystems SHOULD have a stated value for the caseSensitive element

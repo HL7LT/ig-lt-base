@@ -40,5 +40,4 @@ LTBase profiles are designed to be flexible and highly reusable across various u
 
 | Name                                             | Role                          | Organization                                    |
 | ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
-| [Some Person](#) | Primary Author                 | [VĮ Registrų centras](https://www.registrucentras.lt)               |
-| [Igor Bossenko](https://about.askigor.eu)     | Co-Author                | [HELEX Solutions](https://helex.solutions) |
+| [Some Person](#) | Primary Author                 | [VĮ | [Igor Bossenko](https://about.askigor.eu)     | Co-Author                | [HELEX Solutions](https://helex.solutions) |

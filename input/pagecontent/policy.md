@@ -60,7 +60,8 @@ Example for a Lithuanian Organization:
 
 #### P08 **FHIR resource ID**
 
-* Logical IDs (`Resource.id`) **MUST** be server-assigned.
+* Logical IDs (`Resource.id`) **MUST** be server-assigned for production data.
+* For IG development, IDs MUST follow the kebab-case suffix convention (e.g., patient-lt).
 * National ID numbers (e.g., Personal Code / *Asmens kodas*) **MUST NOT** be used as the resource logical ID; they must be stored in the `identifier` element.
 
 #### P09 **Logical references**
@@ -80,17 +81,21 @@ A unified naming strategy is adopted for **Lithuanian** assets to ensure they ar
 
 Resource Ids must be combination of letters, numbers, hyphens, and periods. Ensure that the name is at least 1 character long but does not exceed 64 characters in length. 
 
-The expression is `[A-Za-z0-9\-\.]{1,64}`.
+* Expression: `^[a-z0-9\-]{1,64}$`
+* Requirement: Must end with the country suffix -lt (and -vs for ValueSets).
 
 #### N02: **Business names must start with an uppercase character, and may contain letters and numbers.**
 
-Names must start with an uppercase letter followed by up to 254 characters that can be a mix of letters, numbers, or underscores. 
+Names must start with an uppercase letter followed by up to 254 characters that can be a mix of letters, numbers, or underscores. Names must start with an uppercase letter (PascalCase). The use of underscores is to be avoided.
 
-The expression is `^[A-Z]([A-Za-z0-9_]){1,254}$`. The use of underscores is to be avoided.
+* Expression: `^[A-Z]([A-Za-z0-9_]){1,254}$`
+* Requirement: Must end with the country suffix Lt (and LtVS for ValueSets).
 
 #### N03: **Convention for StructureDefinition definition**
 
-To ensure uniqueness across the global FHIR ecosystem and clarity within the European Health Data Space (EHDS), all Lithuanian FHIR assets **MUST** follow this structured naming convention for profiles, extensions and data types.
+To ensure uniqueness across the global FHIR ecosystem and clarity within the European Health Data Space (EHDS), all Lithuanian FHIR assets **MUST** follow this structured naming convention for profiles, extensions and data types. 
+
+All Lithuanian FHIR assets MUST follow the suffix-based naming convention to ensure they are grouped naturally in alphabetical lists.
 
 * **Base URL**: The official publishing URL. For Lithuania, this is `https://hl7.lt/fhir/[**igcode**]` (or the specific governmental domain).
 * **Country Suffix**: The suffix **Lt** **MUST** be applied for all Lithuanian assets.
@@ -98,6 +103,7 @@ To ensure uniqueness across the global FHIR ecosystem and clarity within the Eur
 * **Machine Name**: The resource (machine) name should use the [PascalCase](https://wiki.c2.com/?PascalCase).
 * **Id**: The resource id should be in lowercase and all words **SHOULD** be separated by hypnes `-`.
 * **Language**: Technical name segments **MUST** be in English.
+* **Metadata**: All resources MUST use Aliases for URLs in FSH (e.g., * ^url = $patient-lt-url).
 
 **Resource Naming Requirements:**
 
@@ -107,8 +113,8 @@ To ensure uniqueness across the global FHIR ecosystem and clarity within the Eur
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | --- | --- | --- | --- |
-| PatientLt | patient-lt | [https://hl7.lt/fhir/base/StructureDefinition/patient-lt](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/patient-lt) | Patient (LT core) |
-| PractitionerLTBase | practitioner-lt-base | [https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt-base](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt-base) | Practitioner (LT Base) |
+| PatientLt | patient-lt | [https://hl7.lt/fhir/base/StructureDefinition/patient-lt](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/patient-lt) | Patient (LT) |
+| PractitionerLTBase | practitioner-lt-base | [https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt](https://www.google.com/search?q=https://hl7.lt/fhir/base/StructureDefinition/practitioner-lt-base) | Practitioner (LT Base) |
 | PathologyOrderLTLab | pathology-order-lt-lab | [https://hl7.lt/fhir/lab/StructureDefinition/pathology-order-lt-lab](https://www.google.com/search?q=hhttps://hl7.lt/fhir/lab/StructureDefinition/pathology-order-lt-lab) | Pathology Order (LT Lab) |
 
 **Instance Naming Requirements:**
@@ -126,18 +132,19 @@ To ensure uniqueness across the global FHIR ecosystem and clarity within the Eur
 
 #### N04: **CodeSystem and ValueSet convention**
 
-* **Base URL**: The official URL of the terminology server. For Lithuania, this is `https://tx.hl7.lt/fhir`.
+* **Base URL**: The official URL of the terminology server. For Lithuania, this is `https://tx.hl7.lt/fhir`. Canonical prefix should avoided.
 * **Machine Name**: The resource (machine) name should use the [PascalCase](https://wiki.c2.com/?PascalCase).
 * **Id**: The resource id should be in lowercase and all words **SHOULD** be separated by hypnes `-`.
 * **Language**: Technical name segments **MUST** be in English.
-* **ResourceType**: ValueSets **SHOULD** be suffixed with `VS` (not mandatory) if value set name matches the code system.
+* **ResourceType**: ValueSets **SHOULD** be suffixed with `VS` (not mandatory) if value set name matches the code system and `Lt` (not mandatory).
 
 * **Resource Name**: [BusinessName][Type] (e.g., LegalStatusVS).
 
 | Resource Name | Resource Id | Resource Url |
 | --- | --- | --- |
-| IdentitySystem | identity-system | [https://tx.hl7.lt/fhir/CodeSystem/identity-system](https://www.google.com/search?q=https://tx.hl7.lt/CodeSystem/identity-system) |
-| MedicalSpecialtyVS | medical-specialty | [https://tx.hl7.lt/fhir/ValueSet/medical-specialty](https://www.google.com/search?q=https://tx.hl7.lt/ValueSet/medical-specialty) |
+| IdentitySystem | identity-system | [https://tx.hl7.lt/fhir/CodeSystem/identity-system](https://tx.hl7.lt/CodeSystem/identity-system) |
+| MedicalSpecialtyVS | medical-specialty | [https://tx.hl7.lt/fhir/ValueSet/medical-specialty](https://tx.hl7.lt/ValueSet/medical-specialty) |
+| PatientIdentifierLt | patient-identifier-lt | [https://tx.hl7.lt/fhir/ValueSet/patient-identifier](https://tx.hl7.lt/fhir/ValueSet/patient-identifier) |
 
 ---
 

@@ -42,5 +42,4 @@ LTBase profiliai sukurti taip, kad būtų lankstūs ir lengvai pakartotinai pana
 
 | Vardas | Pareigos | Organizacija |
 | ------------------------------------------------------------ | --------------------------------------------- | ---------------------------------------------------- |
-| [Asmuo](#) | Pagrindinis autorius           | [VĮ Registrų centras](https://www.registrucentras.lt)               |
 | [Igor Bossenko](https://about.askigor.eu)     | Bendraautoris  | [HELEX](https://helex.health) |
