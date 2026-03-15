@@ -13,6 +13,7 @@ Description: "Lithuanian Base Service Request profile, used for documenting gene
 * priority MS
 * category MS
 * code MS
+* code from http://hl7.org/fhir/ValueSet/procedure-code (example)
 * subject 1.. MS
 * subject only Reference(PatientLt or Group or Device or LocationLt)
 * encounter MS

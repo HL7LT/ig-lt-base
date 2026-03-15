@@ -40,4 +40,4 @@ LTBase profiles are designed to be flexible and highly reusable across various u
 
 | Name                                             | Role                          | Organization                                    |
 | ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
-| [Some Person](#) | Primary Author                 | [VĮ | [Igor Bossenko](https://about.askigor.eu)     | Co-Author                | [HELEX Solutions](https://helex.solutions) |
+| [Igor Bossenko](https://about.askigor.eu)     | Author                | [HELEX Solutions](https://helex.solutions) |

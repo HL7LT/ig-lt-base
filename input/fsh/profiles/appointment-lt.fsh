@@ -8,6 +8,7 @@ Description: "Lithuanian Base Appointment profile, used for planing visit to hea
 
 * status MS
 * class MS
+* class from http://terminology.hl7.org/ValueSet/encounter-class (preferred)
 * serviceCategory MS
 * specialty MS
 * appointmentType MS

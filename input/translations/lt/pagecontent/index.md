@@ -42,4 +42,4 @@ LTBase profiliai sukurti taip, kad būtų lankstūs ir lengvai pakartotinai pana
 
 | Vardas | Pareigos | Organizacija |
 | ------------------------------------------------------------ | --------------------------------------------- | ---------------------------------------------------- |
-| [Igor Bossenko](https://about.askigor.eu)     | Bendraautoris  | [HELEX](https://helex.health) |
+| [Igor Bossenko](https://about.askigor.eu)     | Bendraautoris  | [HELEX Solutions](https://helex.solutions) |
