@@ -20,6 +20,7 @@ publisher:
   url: https://medicinosnk.lt
   email: info@medicinosnk.lt
 
+# don't change the order of the dependencies
 dependencies:
   lt.hl7.fhir.eu: 0.0.2
   hl7.terminology.r5: 7.1.0
