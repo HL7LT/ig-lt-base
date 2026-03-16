@@ -31,3 +31,6 @@ Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 CodeSystems SHOULD have a stated value for the caseSensitive element
+
+#
+Unable to find 3-character code having same country code as ISO 2-char code.*
