@@ -42,6 +42,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  translationinfo.md:
+    title: Translation information
   policy.md:
     title: Policy
   download.md:

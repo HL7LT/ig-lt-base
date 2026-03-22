@@ -15,7 +15,7 @@ Description: "Lithuanian Base DiagnosticReport profile, used for interpretation 
 * code MS
 * code from ReportCode (preferred)
 * subject 1..1 MS
-* subject only Reference(PatientLt or Group or Device or LocationLt or OrganizationLt or PractitionerLt or Medication or Substance or BiologicallyDerivedProduct)
+* subject only Reference($patient-lt-url or $EuPatientAnimalUrl or Group or Device or LocationLt or OrganizationLt or PractitionerLt or Medication or Substance or BiologicallyDerivedProduct)
 * encounter MS
 * encounter only Reference(EncounterLt)
 * effective[x] 1..1 MS

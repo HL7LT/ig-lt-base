@@ -1,5 +1,6 @@
 Profile: ProcedureLt
 Parent: ProcedureEu
+//$ProcedureEuImagingUrl
 Id: procedure-lt
 Title: "ProcedureLt"
 Description: "Lithuanian Base Procedure profile, used for documenting healthcare procedures."

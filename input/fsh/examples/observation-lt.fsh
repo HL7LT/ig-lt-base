@@ -45,6 +45,7 @@ Instance: observation-breast-density-fatty-example
 InstanceOf: ObservationLt
 Usage: #example
 Title: "Observation: Breast Density Fatty (example)"
+Description: "Breast Density Fatty example"
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#733851004 "Breast consistency (observable entity)"

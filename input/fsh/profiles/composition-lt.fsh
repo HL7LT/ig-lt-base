@@ -14,7 +14,7 @@ Description: "Lithuanian Base Composition profile, used for creating healthcare 
 * encounter only Reference(EncounterLt)
 * date MS
 * author MS
-* author only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt or PatientLt or RelatedPersonLt or Device)
+* author only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt or $patient-lt-url or $EuPatientAnimalUrl or RelatedPersonLt or Device)
 * name MS
 * title MS
   *  extension contains translation named translation 0..* MS
