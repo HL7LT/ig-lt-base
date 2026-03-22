@@ -1,8 +1,8 @@
 Profile: ImagingCompositionLt
 Parent: CompositionLt
 Id: imaging-composition-lt
-Title: "Composition: Imaging Summary (Eu IM)" 
-Description: "Clinical document used to represent a Imaging Study Report for the scope of the HL7 Europe project."
+Title: "ImagingCompositionLt" 
+Description: "Composition: Imaging Summary (Eu IM). Clinical document used to represent a Imaging Study Report for the scope of the HL7 Europe project."
 * ^status = #draft
 * ^date = "2025-05-14T15:47:13+02:00"
 * ^publisher = "HL7 Europe"

@@ -1,8 +1,8 @@
 Profile: LaboratoryReportLt
 Parent: DiagnosticReportLt
 Id: laboratory-report-lt
-Title: "DiagnosticReport: Laboratory Report (Eu Lab)"
-Description: "DiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the HL7 Europe project."
+Title: "LaboratoryReportLt"
+Description: "DiagnosticReport: Laboratory Report (Eu Lab) used to represent an entry of a Laboratory Report, including its context, for the scope of the HL7 Europe project."
 * ^language = #en
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 2

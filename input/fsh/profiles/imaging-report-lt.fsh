@@ -1,8 +1,8 @@
 Profile: ImagingReportLt
 Parent: DiagnosticReportLt
 Id: imaging-report-lt
-Title: "DiagnosticReport: Imaging Report (Eu IM)"
-Description: "Diagnostic Report profile for Imaging Reports. This document represents the report of an imaging study. It is the anchor resource that refers to all structured data as well as the `Composition` resource that contains the narrative text of the report."
+Title: "ImagingReportLt"
+Description: "DiagnosticReport: Imaging Report (Eu IM). This document represents the report of an imaging study. It is the anchor resource that refers to all structured data as well as the `Composition` resource that contains the narrative text of the report."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

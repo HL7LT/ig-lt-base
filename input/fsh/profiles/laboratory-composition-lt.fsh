@@ -1,8 +1,8 @@
 Profile: LaboratoryCompositionLt
 Parent: CompositionLt
 Id: laboratory-composition-lt
-Title: "Composition: Laboratory Summary (Eu Lab)"
-Description: "Clinical document used to represent a Laboratory Report for the scope of the HL7 Europe project."
+Title: "LaboratoryCompositionLt"
+Description: "Composition: Laboratory Summary (Eu Lab). Clinical document used to represent a Laboratory Report for the scope of the HL7 Europe project."
 * ^language = #en
 * ^url = $laboratory-composition-lt-url
 * ^version = "0.2.0-ci"
