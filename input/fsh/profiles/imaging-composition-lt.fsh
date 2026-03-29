@@ -33,7 +33,7 @@ Description: "Composition: Imaging Summary (Eu IM). Clinical document used to re
 * author contains
     author 0..* and
     authoringDevice 0..*
-* author[author] only Reference($practitioner-role-lt-url)
+* author[author] only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
 * author[authoringDevice] only Reference(Device)
 * attester ^slicing.discriminator.type = #value
 * attester ^slicing.discriminator.path = "mode"
@@ -75,15 +75,16 @@ Description: "Composition: Imaging Summary (Eu IM). Clinical document used to re
 * section.code 1..
 * section.emptyReason from $ImSectionEmptyReason (preferred)
 * section contains
-    imagingstudy 1..1 and
-    order 1..1 and
-    history 1..1 and
-    procedure 1..1 and
-    comparison 1..1 and
-    findings 1..1 and
-    impression 1..1 and
-    recommendation 1..1 and
-    communication 0..1
+    imagingstudy 0..* and
+    order 0..* and
+    history 0..* and
+    procedure 0..* and
+    comparison 0..* and
+    findings 0..* and
+    impression 0..* and
+    recommendation 0..* and
+    communication 0..* and 
+    report 0..1
 * section[imagingstudy] ^short = "Imaging Study"
 * section[imagingstudy] ^definition = "This section holds information related to the imaging studies covered by this report."
 * section[imagingstudy].extension contains http://hl7.org/fhir/StructureDefinition/note named note 0..*
@@ -167,7 +168,10 @@ Description: "Composition: Imaging Summary (Eu IM). Clinical document used to re
 * section[recommendation].entry[careplan] only Reference($care-plan-lt-url)
 * section[communication] ^short = "Communications"
 * section[communication].extension contains http://hl7.org/fhir/StructureDefinition/note named note 0..*
-* section[communication].code = $loinc#18783-1 "Radiology Study recommendation (narrative)"
+* section[communication].code = $loinc#73568-8 "Communication of critical results [Description] Document"
+* section[report] ^short = "Report"
+* section[report].extension contains http://hl7.org/fhir/StructureDefinition/note named note 0..*
+* section[report].code = $loinc#LP173421-1 "Report"
 
 Invariant: eu-imaging-composition-1
 Description: "When a section is empty, the emptyReason extension SHALL be present."

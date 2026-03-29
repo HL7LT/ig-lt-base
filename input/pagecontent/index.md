@@ -48,4 +48,6 @@ This guide is organized into several sections that support implementation from o
 
 | Name | Role | Organization |
 |------|------|--------------|
-| [Igor Bossenko](https://about.askigor.eu) | Author | [HELEX Solutions](https://helex.solutions) |
+| [Igor Bossenko](https://about.askigor.eu) | Primary Author | [HELEX Solutions](https://helex.solutions) |
+| [Kati Laidus](https://www.linkedin.com/in/kati-laidus/) | Reviewer | [HELEX Solutions](https://helex.solutions) |
+| Martynas Bieliauskas | Reviewer | [LMB](https://lmb.lt) |

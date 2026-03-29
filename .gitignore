@@ -13,5 +13,7 @@ Thumbs.db
 /translations/*
 .claude/settings.local.json
 
+
 # Cursor IDE files
 .cursor/
+CLAUDE.md
