@@ -148,6 +148,27 @@ All Lithuanian FHIR assets MUST follow the suffix-based naming convention to ens
 
 ---
 
+### Screening Programme Patterns
+
+#### SCRN-01 **Screening CarePlan**
+
+All national screening programme IGs **SHOULD** use [ScreeningCarePlanLt](StructureDefinition-screening-careplan-lt.html) as the parent profile for their programme-specific CarePlan. This ensures consistent structure for enrollment, status tracking, activities, and follow-up across programmes.
+
+#### SCRN-02 **Follow-up Recommendations**
+
+Screening and diagnostic IGs model follow-up recommendations using one of two patterns:
+
+* **ServiceRequest** — when a concrete clinical order or referral is being placed (e.g., referral to biopsy, scheduling a follow-up examination). Use this when the recommendation triggers an actionable workflow step.
+* **Observation** — when recording a clinical recommendation or assessment finding that informs the next step but does not directly create an order (e.g., "recommend repeat screening in 12 months").
+
+IGs **SHOULD** document which pattern they use and why. Both patterns are valid; the choice depends on whether the recommendation is actionable (ServiceRequest) or informational (Observation).
+
+#### SCRN-03 **Finding Evolution**
+
+When tracking how findings change over time (new, increased, decreased, stable, absent), IGs **SHOULD** use the shared [FindingEvolutionVS](ValueSet-finding-evolution.html) ValueSet from LT Base rather than defining local equivalents.
+
+---
+
 ### Health Services / Providers
 
 #### FHIR-SERV-01 **Base Paths**

@@ -27,11 +27,13 @@ Alias: $practitioner-lt-url = https://hl7.lt/fhir/base/StructureDefinition/pract
 Alias: $practitioner-role-lt-url = https://hl7.lt/fhir/base/StructureDefinition/practitioner-role-lt
 Alias: $procedure-lt-url = https://hl7.lt/fhir/base/StructureDefinition/procedure-lt
 Alias: $related-person-lt-url = https://hl7.lt/fhir/base/StructureDefinition/related-person-lt
+Alias: $screening-careplan-lt-url = https://hl7.lt/fhir/base/StructureDefinition/screening-careplan-lt
 Alias: $service-request-lt-url = https://hl7.lt/fhir/base/StructureDefinition/service-request-lt
 
 // CodeSystem URL aliases (remove -lt suffix, change prefix to tx.hl7.lt/fhir/)
 Alias: $identifier-domain-lt-url = https://tx.hl7.lt/fhir/CodeSystem/identifier-domain
 
 // ValueSet URL aliases (remove -lt-vs suffix, change prefix to tx.hl7.lt/fhir/)
+Alias: $finding-evolution-vs-url = https://tx.hl7.lt/fhir/ValueSet/finding-evolution
 Alias: $organization-identifier-vs-lt-url = https://tx.hl7.lt/fhir/ValueSet/organization-identifier
 Alias: $patient-identifier-vs-lt-url = https://tx.hl7.lt/fhir/ValueSet/patient-identifier
