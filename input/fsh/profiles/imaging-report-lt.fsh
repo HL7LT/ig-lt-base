@@ -48,7 +48,7 @@ Description: "DiagnosticReport: Imaging Report (Eu IM). This document represents
 // * subject only Reference($ImPatient)
 * subject only Reference($patient-lt-url)
 * performer ^slicing.discriminator.type = #profile
-* performer ^slicing.discriminator.path = "$this"
+* performer ^slicing.discriminator.path = "resolve()"
 * performer ^slicing.ordered = false
 * performer ^slicing.rules = #open
 * performer contains author 1..*
@@ -60,8 +60,11 @@ Description: "DiagnosticReport: Imaging Report (Eu IM). This document represents
 * resultsInterpreter contains author 0..*
 * resultsInterpreter[author] only Reference($practitioner-role-lt-url)
 * study only Reference($imaging-study-lt-url)
+// The discriminator was #value on "reference", where the slice constrains only the
+// target profile, not a value — so the slicing could not be evaluated. The slice
+// does fix supportingInfo.type, which is what tells the slices apart.
 * supportingInfo ^slicing.discriminator.type = #value
-* supportingInfo ^slicing.discriminator.path = "reference"
+* supportingInfo ^slicing.discriminator.path = "type"
 * supportingInfo ^slicing.ordered = false
 * supportingInfo ^slicing.rules = #open
 * supportingInfo.type from $valueset-diagnosticreport-report-support-info (extensible)

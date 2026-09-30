@@ -55,7 +55,7 @@ Alias: $codesystem-missing-dicom-terminology = http://hl7.eu/fhir/imaging-r5/Cod
 Alias: $endpoint-connection-type = http://terminology.hl7.org/CodeSystem/endpoint-connection-type
 Alias: $codesystem-missing-dicom-terminology = http://hl7.eu/fhir/imaging-r5/CodeSystem/codesystem-missing-dicom-terminology
 Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
-Alias: $sect_CID_33.html = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
+Alias: $sect_CID_33.html = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
 
 // --- IM ValueSet
 Alias: $im-imaging-device-type = http://hl7.eu/fhir/imaging-r5/ValueSet/im-imaging-device-type
@@ -66,7 +66,7 @@ Alias: $im-procedure-type = http://hl7.eu/fhir/imaging-r5/ValueSet/im-procedure-
 Alias: $media-view = http://hl7.eu/fhir/imaging-r5/ValueSet/media-view
 
 Alias: $ImImagingReportTypesEuVS = http://hl7.eu/fhir/imaging-r5/ValueSet/ImImagingReportTypesEuVS
-Alias: $valueset-procedure-reason.html = https://www.hl7.org/fhir/valueset-procedure-reason.html
+Alias: $valueset-procedure-reason.html = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $ImSectionEmptyReason = http://hl7.eu/fhir/imaging-r5/ValueSet/ImSectionEmptyReason
 
 Alias: $v2-0074-vs = http://terminology.hl7.org/ValueSet/v2-0074

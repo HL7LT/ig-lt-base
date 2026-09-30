@@ -9,7 +9,7 @@ name: LTBase
 title: Lithuanian Base Implementation Guide
 description: Lithuanian Base Implementation Guide
 status: draft # draft | active | retired | unknown
-version: 0.3.0
+version: 0.4.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -22,10 +22,20 @@ publisher:
 
 # don't change the order of the dependencies
 dependencies:
-  lt.hl7.fhir.eu: 0.0.2
-  hl7.terminology.r5: 7.1.0
+  lt.hl7.fhir.eu: 0.0.3
+  # uri names the ImplementationGuide resource this package ships; the package
+  # canonical alone is not it, and the publisher asks for the IG URL.
+  hl7.terminology.r5:
+    id: hl7tx
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    version: 7.1.0
   hl7.fhir.eu.base-r5: 0.1.0
-  hl7.fhir.eu.extensions.r5: 1.2.0
+  # uri names the ImplementationGuide resource this package ships; the package
+  # canonical alone is not it, and the publisher asks for the IG URL.
+  hl7.fhir.eu.extensions.r5:
+    id: hl7euextr5
+    uri: http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions
+    version: 1.2.0
   
 
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -69,13 +79,15 @@ pages:
 
 
 parameters:
-  special-url-base: https://hl7.lt/fhir
-  special-url: 
+  # Canonicals this guide deliberately hosts outside its own base. See
+  # _audit/fix-special-url.js for why each namespace is re-hosted here.
+  special-url-base:
     - https://tx.hl7.lt/fhir
+  special-url:
     - https://tx.hl7.lt/fhir/CodeSystem/identifier-domain
-    - https://tx.hl7.lt/fhir/ValueSet/patient-identifier
+    - https://tx.hl7.lt/fhir/ValueSet/finding-evolution
     - https://tx.hl7.lt/fhir/ValueSet/organization-identifier
-    - http://terminology.hl7.org/ValueSet/EncounterClass
+    - https://tx.hl7.lt/fhir/ValueSet/patient-identifier
 
   excludettl: true
   shownav: true
